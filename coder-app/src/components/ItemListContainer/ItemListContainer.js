@@ -2,7 +2,6 @@
 import ItemList from "../itemList/ItemList"
 import Spinner from 'react-bootstrap/Spinner';
 import {getItem, getItemByCategory} from "../data/Data"
-import CardGroup from 'react-bootstrap/CardGroup';
 import { useParams } from "react-router-dom";
 
 import { useEffect, useState } from 'react'
@@ -32,7 +31,7 @@ function ItemListContainer() {
 
 
     return (
-        <CardGroup>
+        <div>
             {
                 loading ?
 
@@ -42,8 +41,7 @@ function ItemListContainer() {
                     </Spinner>
                     : <ItemList data={data}/>
             }
-
-        </CardGroup>
+        </div>
     )
 
 } export default ItemListContainer

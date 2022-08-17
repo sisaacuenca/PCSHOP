@@ -9,7 +9,7 @@ import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
 
 
 
-function Item(id, nombre, precio, img, stock) {
+function Item({id, nombre, precio, img, stock}) {
     return (
 
         <Card style={{ width: '18rem' }}>
